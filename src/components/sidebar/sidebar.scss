@@ -1,0 +1,42 @@
+@use "/src/sass/variables";
+
+
+$font-weight-sidebar: 600;
+
+
+.sidebar {
+    background-color: variables.$blue;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    width: 15rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid variables.$gray-700;
+    margin: 0;
+    padding: 0;
+
+    ul {
+        list-style: none;
+        padding-left: 1rem;
+        padding-right: 0.5rem;
+        a {
+            font-weight: $font-weight-sidebar;
+            text-decoration: none;
+            color: variables.$black;    
+            
+            li {
+                margin-bottom: 1rem;
+                border-radius: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+            }
+
+            li:hover {
+                background-color: #213344
+            }
+        }    
+    }
+}
+
+    
